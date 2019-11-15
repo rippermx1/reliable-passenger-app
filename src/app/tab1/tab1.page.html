@@ -11,20 +11,12 @@
      <ion-list-header>
       <ion-label>Yours passenger list now (14:19 PM)</ion-label>
     </ion-list-header>
-    <ion-item href="#">
+    <ion-item href="#" *ngFor=" let passenger of passengersList">
       <ion-thumbnail slot="start">
-        <ion-img src="https://picsum.photos/id/374/64/64"></ion-img>
+        <ion-img src="{{passenger.image}}"></ion-img>
       </ion-thumbnail>
-      <ion-label>Picked up at 21:00 PM</ion-label>
+      <ion-label>Picked up at {{passenger.pickedUpAt}}</ion-label>
       <ion-icon name="time"></ion-icon>
     </ion-item>
-    <ion-item href="#">
-      <ion-thumbnail slot="start">
-        <ion-img src="https://picsum.photos/id/374/64/64"></ion-img>
-      </ion-thumbnail>
-      <ion-label>Picked up at 21:00 AM</ion-label>
-      <ion-icon name="time"></ion-icon>
-    </ion-item>
-
   </ion-list>
 </ion-content>
