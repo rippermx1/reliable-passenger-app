@@ -1,5 +1,7 @@
 {
   "name": "reliable-passenger-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
