@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { PassengerService } from '../services/passenger.service';
+import { PassengerService } from '../../services/passenger.service';
 
 @Component({
   selector: 'app-tab2',
