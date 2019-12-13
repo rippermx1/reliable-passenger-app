@@ -6,7 +6,21 @@
   <ion-card class="welcome-card">
     <img src="https://picsum.photos/id/374/320/320" alt="fingerprint" />
     <ion-card-content>
-      <p>Passenger accepted at 16:34:32 26-11-2019</p>
+      <p class="ion-text-center">¿Aceptas al pasajero?</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-fab-button color="success">
+              <ion-icon name="checkmark"></ion-icon>
+            </ion-fab-button>
+          </ion-col>
+          <ion-col size="6" text-center>
+            <ion-fab-button color="warning">
+              <ion-icon name="close"></ion-icon>
+            </ion-fab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card-content>
   </ion-card>
 </ion-content>
