@@ -1,9 +1,12 @@
 <ion-header>
-  <app-navbar [icon]="icon" [url]="url"></app-navbar>
+  <app-navbar [icon]="icon" [url]="url" [title]="title"></app-navbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
+    <ion-card-title>
+      <h5 text-center>Patente</h5>
+    </ion-card-title>
     <h1 text-center>{{car.number}}</h1>
   </ion-card>
 </ion-content>

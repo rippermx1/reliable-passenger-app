@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MyCarPage implements OnInit {
   icon: string = 'home';
   url: string = '/tabs/tab1';
+  title: string = 'Vehículos';
 
   car: any = {
     number: 'AB*CD*12',
