@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import random from '@angular-devkit/schematics/src/rules/random';
+import {Navbar} from "../../interfaces/navbar/Navbar";
 
 @Component({
   selector: 'app-tab1',
@@ -8,12 +9,13 @@ import random from '@angular-devkit/schematics/src/rules/random';
 })
 export class Tab1Page implements OnInit {
   /**
-   * Navbar values
+   * Navbar object
    */
-  icon: string = 'logo-model-s';
-  url: string = '/my-car';
-  title: string = 'Viajes';
-
+  navbar: Navbar = {
+    title: 'Viajes',
+    icon: 'logo-model-s',
+    url: '/my-car'
+  };
   /**
    * Fingerprint images
    */
