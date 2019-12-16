@@ -2,14 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-      NavbarComponent
+      NavbarComponent,
+      SideMenuComponent
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    SideMenuComponent
   ],
   imports: [
     CommonModule,
