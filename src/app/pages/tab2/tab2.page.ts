@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { PassengerService } from '../../services/passenger.service';
+import { Navbar } from '../../interfaces/navbar/Navbar';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,14 @@ import { PassengerService } from '../../services/passenger.service';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page implements OnInit {
+  /**
+   * Navbar object
+   */
+  navbar: Navbar = {
+    title: 'Pasajeros',
+    icon: 'home',
+    url: '/tabs/tab1'
+  };
   passengersList: any;
   constructor(private passengerService: PassengerService) {}
   ngOnInit(): void {
