@@ -3,24 +3,36 @@
 </ion-header>
 
 <ion-content>
-  <ion-card class="welcome-card">
-    <img src="https://picsum.photos/id/374/320/320" alt="fingerprint" />
-    <ion-card-content>
-      <p class="ion-text-center">¿Aceptas al pasajero?</p>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="6">
-            <ion-fab-button color="success">
-              <ion-icon name="checkmark"></ion-icon>
-            </ion-fab-button>
-          </ion-col>
-          <ion-col size="6" text-center>
-            <ion-fab-button color="warning">
-              <ion-icon name="close"></ion-icon>
-            </ion-fab-button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
-  </ion-card>
+  <ion-row [className]="class">
+    <ion-col size="10" offset="1">
+      <ion-card class="card">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <h3 class="ion-text-center">¿Aceptas al pasajero?</h3>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6" offset="3">
+              <img src="{{fingerprintSelected}}" alt="fingerprint" />
+            </ion-col>
+          </ion-row>
+          <!-- Buttons -->
+          <ion-row>
+            <ion-col size="6" class="ion-text-center">
+              <ion-button color="success" shape="round" size="large" (click)="acceptPassenger()">
+                <ion-icon name="checkmark"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col size="6" class="ion-text-center">
+              <ion-button color="warning" shape="round" size="large" (click)="rejectPassenger()">
+                <ion-icon name="close"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          <!-- Buttons -->
+        </ion-grid>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>

@@ -2,3 +2,16 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.sc-ion-card-md-s img {
+  width: 100% !important;
+  max-height: 200px;
+}
+
+.accept-passenger {
+  display: block;
+}
+
+.reject-passenger {
+  display: none;
+}
